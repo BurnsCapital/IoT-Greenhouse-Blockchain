@@ -1,0 +1,17 @@
+body {
+background-color: powderblue;
+background-image: url("../img/BG.jpg");
+background-size: 100% 800px;
+}
+
+.card {
+margin: 10px;
+}
+
+.etc-logo {
+  right: 0px;
+  bottom: 0px;
+  max-height: 50px;
+  border-style: none;
+  position: absolute;
+}

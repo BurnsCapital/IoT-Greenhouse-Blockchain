@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Greenhouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+
+  <!-- top row -->
+   <div class="row text-center">
+     <div class="card border-danger mb-3 col-md-3">
+      <div class="card-header">Moisture</div>
+      <div class="card-body text-danger">
+        <h4 id="waterLevel" class="card-title"></h4>
+      </div>
+     </div>
+    <div class="card border-success mb-3 col-md-3">
+     <div class="card-header">Clock</div>
+      <div class="card-body text-success">
+      <h4 id="clock" class="card-title"></h4>
+     </div>
+    </div>
+    <div class="card border-danger mb-3 col-md-3">
+     <div class="card-header">Light</div>
+     <div class="card-body text-danger">
+      <h4 id="lightLevel" class="card-title"></h4>
+     </div>
+    </div>
+  </div>
+  <!-- end top row -->
+  <!-- second row -->
+  <div class="row text-center">
+   <div class="col-md-5"></div>
+  <div class="card border-success mb-3 col-md-2">
+    <div class="card-header">Tempature</div>
+    <div class="card-body text-success">
+      <h4 id="temp" class="card-title"></h4>
+    </div>
+  </div>
+  <div class="card border-warning mb-3 col-md-2">
+    <div class="card-header">Humidity</div>
+    <div class="card-body text-warning">
+      <h4 id="humidity" class="card-title"></h4>
+    </div>
+  </div>
+  </div>
+  <!-- end second row -->
+  </div>
+<div id="chart_div" style="width: 400px; height: 120px;"></div>
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+  <script src="js/client.js"></script>
+</html>

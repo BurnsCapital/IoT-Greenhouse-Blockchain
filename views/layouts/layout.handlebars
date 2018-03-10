@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{> header}}
+</head>
+
+<body>
+<div id="page-wrapper">
+      <div>
+      {{> flash}}
+    </div>
+      {{> navbar}}
+      {{{body}}}
+    </div>
+    {{> footer}}
+</body>
+
+<footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+  <script src="js/client.js"></script>
+</footer>
